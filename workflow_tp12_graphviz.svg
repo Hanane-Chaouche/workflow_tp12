@@ -1,0 +1,480 @@
+<svg width="2106pt" height="989pt" viewBox="0.00 0.00 2106.00 988.88" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 984.88)">
+<title>TF</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-984.88 2102,-984.88 2102,4 -4,4"/>
+<g id="clust1" class="cluster">
+<title>cluster_main</title>
+<path fill="#e3f2fd" stroke="#1e88e5" stroke-dasharray="5,2" d="M1892,-8C1892,-8 2078,-8 2078,-8 2084,-8 2090,-14 2090,-20 2090,-20 2090,-172.23 2090,-172.23 2090,-178.23 2084,-184.23 2078,-184.23 2078,-184.23 1892,-184.23 1892,-184.23 1886,-184.23 1880,-178.23 1880,-172.23 1880,-172.23 1880,-20 1880,-20 1880,-14 1886,-8 1892,-8"/>
+<text text-anchor="middle" x="1985" y="-167.63" font-family="Times,serif" font-size="14.00" fill="#0d47a1">main.tf</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_auto</title>
+<path fill="#fff3e0" stroke="#fb8c00" stroke-dasharray="5,2" d="M20,-604.68C20,-604.68 282,-604.68 282,-604.68 288,-604.68 294,-610.68 294,-616.68 294,-616.68 294,-960.88 294,-960.88 294,-966.88 288,-972.88 282,-972.88 282,-972.88 20,-972.88 20,-972.88 14,-972.88 8,-966.88 8,-960.88 8,-960.88 8,-616.68 8,-616.68 8,-610.68 14,-604.68 20,-604.68"/>
+<text text-anchor="middle" x="151" y="-956.28" font-family="Times,serif" font-size="14.00" fill="#e65100">autoscaling.tf</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_s3</title>
+<path fill="#fff8e1" stroke="#fbc02d" stroke-dasharray="5,2" d="M1232,-102.8C1232,-102.8 1860,-102.8 1860,-102.8 1866,-102.8 1872,-108.8 1872,-114.8 1872,-114.8 1872,-567.68 1872,-567.68 1872,-573.68 1866,-579.68 1860,-579.68 1860,-579.68 1232,-579.68 1232,-579.68 1226,-579.68 1220,-573.68 1220,-567.68 1220,-567.68 1220,-114.8 1220,-114.8 1220,-108.8 1226,-102.8 1232,-102.8"/>
+<text text-anchor="middle" x="1546" y="-563.08" font-family="Times,serif" font-size="14.00" fill="#f57f17">s3.tf</text>
+</g>
+<g id="clust6" class="cluster">
+<title>cluster_snap</title>
+<path fill="#f3e5f5" stroke="#8e24aa" stroke-dasharray="5,2" d="M314,-107.43C314,-107.43 1200,-107.43 1200,-107.43 1206,-107.43 1212,-113.43 1212,-119.43 1212,-119.43 1212,-669.48 1212,-669.48 1212,-675.48 1206,-681.48 1200,-681.48 1200,-681.48 314,-681.48 314,-681.48 308,-681.48 302,-675.48 302,-669.48 302,-669.48 302,-119.43 302,-119.43 302,-113.43 308,-107.43 314,-107.43"/>
+<text text-anchor="middle" x="757" y="-664.88" font-family="Times,serif" font-size="14.00" fill="#6a1b9a">snapshot.tf</text>
+</g>
+<g id="clust7" class="cluster">
+<title>cluster_rds</title>
+<path fill="#e8f5e9" stroke="#2e7d32" stroke-dasharray="5,2" d="M1537,-801.28C1537,-801.28 1967,-801.28 1967,-801.28 1973,-801.28 1979,-807.28 1979,-813.28 1979,-813.28 1979,-960.88 1979,-960.88 1979,-966.88 1973,-972.88 1967,-972.88 1967,-972.88 1537,-972.88 1537,-972.88 1531,-972.88 1525,-966.88 1525,-960.88 1525,-960.88 1525,-813.28 1525,-813.28 1525,-807.28 1531,-801.28 1537,-801.28"/>
+<text text-anchor="middle" x="1752" y="-956.28" font-family="Times,serif" font-size="14.00" fill="#1b5e20">rds.tf</text>
+</g>
+<!-- m_sg -->
+<g id="node1" class="node">
+<title>m_sg</title>
+<ellipse fill="#bbdefb" stroke="#0d47a1" cx="1985" cy="-133.43" rx="96.87" ry="18"/>
+<text text-anchor="middle" x="1985" y="-130.43" font-family="Helvetica,sans-Serif" font-size="10.00">aws_security_group.instance_sg</text>
+</g>
+<!-- m_ec2 -->
+<g id="node2" class="node">
+<title>m_ec2</title>
+<ellipse fill="#bbdefb" stroke="#0d47a1" cx="1979" cy="-34" rx="84.5" ry="18"/>
+<text text-anchor="middle" x="1979" y="-31" font-family="Helvetica,sans-Serif" font-size="10.00">aws_instance.web_instance</text>
+</g>
+<!-- m_sg&#45;&gt;m_ec2 -->
+<g id="edge1" class="edge">
+<title>m_sg-&gt;m_ec2</title>
+<path fill="none" stroke="#1e88e5" stroke-width="1.4" d="M1983.93,-115.01C1983.06,-100.88 1981.81,-80.65 1980.79,-64.07"/>
+<polygon fill="#1e88e5" stroke="#1e88e5" stroke-width="1.4" points="1984.3,-64.15 1980.19,-54.38 1977.32,-64.58 1984.3,-64.15"/>
+</g>
+<!-- a_sg -->
+<g id="node3" class="node">
+<title>a_sg</title>
+<ellipse fill="#ffe0b2" stroke="#e65100" cx="128" cy="-922.08" rx="112.25" ry="18"/>
+<text text-anchor="middle" x="128" y="-919.08" font-family="Helvetica,sans-Serif" font-size="10.00">aws_security_group.load_balancer_sg</text>
+</g>
+<!-- a_lb -->
+<g id="node4" class="node">
+<title>a_lb</title>
+<ellipse fill="#ffe0b2" stroke="#e65100" cx="98" cy="-827.28" rx="28.34" ry="18"/>
+<text text-anchor="middle" x="98" y="-824.28" font-family="Helvetica,sans-Serif" font-size="10.00">aws_lb</text>
+</g>
+<!-- a_sg&#45;&gt;a_lb -->
+<g id="edge2" class="edge">
+<title>a_sg-&gt;a_lb</title>
+<path fill="none" stroke="#fb8c00" stroke-width="1.4" d="M122.36,-903.63C118.1,-890.45 112.16,-872.1 107.22,-856.8"/>
+<polygon fill="#fb8c00" stroke="#fb8c00" stroke-width="1.4" points="110.57,-855.8 104.17,-847.36 103.91,-857.95 110.57,-855.8"/>
+</g>
+<!-- a_lst -->
+<g id="node5" class="node">
+<title>a_lst</title>
+<ellipse fill="#ffe0b2" stroke="#e65100" cx="67" cy="-742.28" rx="51.07" ry="18"/>
+<text text-anchor="middle" x="67" y="-739.28" font-family="Helvetica,sans-Serif" font-size="10.00">aws_lb_listener</text>
+</g>
+<!-- a_lb&#45;&gt;a_lst -->
+<g id="edge3" class="edge">
+<title>a_lb-&gt;a_lst</title>
+<path fill="none" stroke="#fb8c00" stroke-width="1.4" d="M91.73,-809.49C87.7,-798.72 82.38,-784.46 77.7,-771.93"/>
+<polygon fill="#fb8c00" stroke="#fb8c00" stroke-width="1.4" points="81,-770.75 74.22,-762.61 74.44,-773.2 81,-770.75"/>
+</g>
+<!-- a_tg -->
+<g id="node6" class="node">
+<title>a_tg</title>
+<ellipse fill="#ffe0b2" stroke="#e65100" cx="106" cy="-630.68" rx="65.79" ry="18"/>
+<text text-anchor="middle" x="106" y="-627.68" font-family="Helvetica,sans-Serif" font-size="10.00">aws_lb_target_group</text>
+</g>
+<!-- a_lst&#45;&gt;a_tg -->
+<g id="edge4" class="edge">
+<title>a_lst-&gt;a_tg</title>
+<path fill="none" stroke="#fb8c00" stroke-width="1.4" d="M73.09,-724.16C79.15,-707.13 88.56,-680.68 95.77,-660.43"/>
+<polygon fill="#fb8c00" stroke="#fb8c00" stroke-width="1.4" points="99.05,-661.64 99.11,-651.05 92.46,-659.29 99.05,-661.64"/>
+</g>
+<!-- a_lt -->
+<g id="node7" class="node">
+<title>a_lt</title>
+<ellipse fill="#ffe0b2" stroke="#e65100" cx="216" cy="-827.28" rx="67.79" ry="18"/>
+<text text-anchor="middle" x="216" y="-824.28" font-family="Helvetica,sans-Serif" font-size="10.00">aws_launch_template</text>
+</g>
+<!-- a_asg -->
+<g id="node8" class="node">
+<title>a_asg</title>
+<ellipse fill="#ffe0b2" stroke="#e65100" cx="213" cy="-742.28" rx="72.81" ry="18"/>
+<text text-anchor="middle" x="213" y="-739.28" font-family="Helvetica,sans-Serif" font-size="10.00">aws_autoscaling_group</text>
+</g>
+<!-- a_lt&#45;&gt;a_asg -->
+<g id="edge5" class="edge">
+<title>a_lt-&gt;a_asg</title>
+<path fill="none" stroke="#fb8c00" stroke-width="1.4" d="M215.38,-809.08C215,-798.58 214.5,-784.88 214.06,-772.69"/>
+<polygon fill="#fb8c00" stroke="#fb8c00" stroke-width="1.4" points="217.57,-772.73 213.71,-762.86 210.57,-772.98 217.57,-772.73"/>
+</g>
+<!-- a_asg&#45;&gt;a_tg -->
+<g id="edge6" class="edge">
+<title>a_asg-&gt;a_tg</title>
+<path fill="none" stroke="#fb8c00" stroke-width="1.4" d="M196.75,-724.64C179.23,-706.69 151.13,-677.91 130.84,-657.13"/>
+<polygon fill="#fb8c00" stroke="#fb8c00" stroke-width="1.4" points="133.37,-654.71 123.88,-650 128.37,-659.6 133.37,-654.71"/>
+</g>
+<!-- scale_rule -->
+<g id="node29" class="node">
+<title>scale_rule</title>
+<ellipse fill="#e1bee7" stroke="#6a1b9a" cx="566" cy="-630.68" rx="132.31" ry="18"/>
+<text text-anchor="middle" x="566" y="-627.68" font-family="Helvetica,sans-Serif" font-size="10.00">aws_cloudwatch_event_rule.scale_event_rule</text>
+</g>
+<!-- a_asg&#45;&gt;scale_rule -->
+<g id="edge34" class="edge">
+<title>a_asg-&gt;scale_rule</title>
+<path fill="none" stroke="#666666" stroke-dasharray="5,2" d="M261.19,-728.41C303.91,-716.8 367.88,-698.91 423,-681.48 452.08,-672.29 484.17,-661.2 510.57,-651.82"/>
+<polygon fill="#666666" stroke="#666666" points="511.47,-655.22 519.71,-648.56 509.12,-648.62 511.47,-655.22"/>
+<text text-anchor="middle" x="418.65" y="-692.18" font-family="Helvetica,sans-Serif" font-size="9.00">ASG events</text>
+</g>
+<!-- s_log -->
+<g id="node9" class="node">
+<title>s_log</title>
+<ellipse fill="#ffecb3" stroke="#f57f17" cx="1415" cy="-443.88" rx="81.83" ry="18"/>
+<text text-anchor="middle" x="1415" y="-440.88" font-family="Helvetica,sans-Serif" font-size="10.00">aws_s3_bucket.log_bucket</text>
+</g>
+<!-- s_web -->
+<g id="node10" class="node">
+<title>s_web</title>
+<ellipse fill="#ffecb3" stroke="#f57f17" cx="1766" cy="-245.03" rx="98.21" ry="18"/>
+<text text-anchor="middle" x="1766" y="-242.03" font-family="Helvetica,sans-Serif" font-size="10.00">aws_s3_bucket.webpage_bucket</text>
+</g>
+<!-- l_log -->
+<g id="node11" class="node">
+<title>l_log</title>
+<ellipse fill="#ffecb3" stroke="#f57f17" cx="1726" cy="-344.45" rx="138.28" ry="22.63"/>
+<text text-anchor="middle" x="1726" y="-347.45" font-family="Helvetica,sans-Serif" font-size="10.00">aws_lambda_function.log_sync_function</text>
+<text text-anchor="middle" x="1726" y="-335.45" font-family="Helvetica,sans-Serif" font-size="10.00">(handler: log.lambda_handler)</text>
+</g>
+<!-- l_log&#45;&gt;s_log -->
+<g id="edge28" class="edge">
+<title>l_log-&gt;s_log</title>
+<path fill="none" stroke="#f57f17" stroke-dasharray="1,5" d="M1673.68,-365.86C1643.83,-377.17 1605.58,-391.07 1571,-401.88 1541.39,-411.14 1508.19,-420.07 1480.05,-427.21"/>
+<polygon fill="#f57f17" stroke="#f57f17" points="1479.45,-423.75 1470.6,-429.59 1481.16,-430.54 1479.45,-423.75"/>
+<text text-anchor="middle" x="1650.76" y="-393.78" font-family="Helvetica,sans-Serif" font-size="9.00">env: SOURCE_BUCKET</text>
+</g>
+<!-- l_log&#45;&gt;s_web -->
+<g id="edge29" class="edge">
+<title>l_log-&gt;s_web</title>
+<path fill="none" stroke="#f57f17" stroke-dasharray="1,5" d="M1734.88,-321.83C1740.69,-307.67 1748.35,-289.02 1754.61,-273.77"/>
+<polygon fill="#f57f17" stroke="#f57f17" points="1757.74,-275.35 1758.3,-264.77 1751.27,-272.69 1757.74,-275.35"/>
+<text text-anchor="middle" x="1790.91" y="-289.73" font-family="Helvetica,sans-Serif" font-size="9.00">env: DEST_BUCKET</text>
+</g>
+<!-- l_web -->
+<g id="node12" class="node">
+<title>l_web</title>
+<ellipse fill="#ffecb3" stroke="#f57f17" cx="1587" cy="-133.43" rx="157.55" ry="22.63"/>
+<text text-anchor="middle" x="1587" y="-136.43" font-family="Helvetica,sans-Serif" font-size="10.00">aws_lambda_function.webpage_sync_function</text>
+<text text-anchor="middle" x="1587" y="-124.43" font-family="Helvetica,sans-Serif" font-size="10.00">(handler: webpage.lambda_handler)</text>
+</g>
+<!-- l_web&#45;&gt;s_log -->
+<g id="edge31" class="edge">
+<title>l_web-&gt;s_log</title>
+<path fill="none" stroke="#f57f17" stroke-dasharray="1,5" d="M1604.61,-156.05C1623.31,-181.79 1648.24,-225.97 1633,-263.03 1629.91,-270.55 1536.29,-361.93 1530,-367.08 1505.67,-387.02 1475.99,-406.48 1452.87,-420.69"/>
+<polygon fill="#f57f17" stroke="#f57f17" points="1451.1,-417.67 1444.37,-425.85 1454.73,-423.65 1451.1,-417.67"/>
+<text text-anchor="middle" x="1653.09" y="-289.73" font-family="Helvetica,sans-Serif" font-size="9.00">env: DEST_BUCKET</text>
+</g>
+<!-- l_web&#45;&gt;s_web -->
+<g id="edge30" class="edge">
+<title>l_web-&gt;s_web</title>
+<path fill="none" stroke="#f57f17" stroke-dasharray="1,5" d="M1622.15,-155.95C1653.02,-174.85 1697.77,-202.25 1729.13,-221.45"/>
+<polygon fill="#f57f17" stroke="#f57f17" points="1727.17,-224.35 1737.52,-226.59 1730.82,-218.38 1727.17,-224.35"/>
+<text text-anchor="middle" x="1747.56" y="-194.93" font-family="Helvetica,sans-Serif" font-size="9.00">env: SOURCE_BUCKET</text>
+</g>
+<!-- cw_lr -->
+<g id="node13" class="node">
+<title>cw_lr</title>
+<ellipse fill="#ffecb3" stroke="#f57f17" cx="1653" cy="-528.88" rx="123.95" ry="18"/>
+<text text-anchor="middle" x="1653" y="-525.88" font-family="Helvetica,sans-Serif" font-size="10.00">aws_cloudwatch_event_rule.log_sync_rule</text>
+</g>
+<!-- cwt_lr -->
+<g id="node14" class="node">
+<title>cwt_lr</title>
+<ellipse fill="#ffecb3" stroke="#f57f17" cx="1653" cy="-443.88" rx="134.65" ry="18"/>
+<text text-anchor="middle" x="1653" y="-440.88" font-family="Helvetica,sans-Serif" font-size="10.00">aws_cloudwatch_event_target.log_sync_target</text>
+</g>
+<!-- cw_lr&#45;&gt;cwt_lr -->
+<g id="edge7" class="edge">
+<title>cw_lr-&gt;cwt_lr</title>
+<path fill="none" stroke="#f57f17" stroke-width="1.3" d="M1653,-510.68C1653,-500.18 1653,-486.48 1653,-474.29"/>
+<polygon fill="#f57f17" stroke="#f57f17" stroke-width="1.3" points="1656.5,-474.31 1653,-464.31 1649.5,-474.31 1656.5,-474.31"/>
+</g>
+<!-- cwt_lr&#45;&gt;l_log -->
+<g id="edge8" class="edge">
+<title>cwt_lr-&gt;l_log</title>
+<path fill="none" stroke="#f57f17" stroke-width="1.3" d="M1685.03,-426.04C1694.6,-419.63 1704.31,-411.5 1711,-401.88 1715.74,-395.06 1718.99,-386.82 1721.21,-378.77"/>
+<polygon fill="#f57f17" stroke="#f57f17" stroke-width="1.3" points="1724.57,-379.75 1723.35,-369.23 1717.74,-378.22 1724.57,-379.75"/>
+</g>
+<!-- cw_wr -->
+<g id="node15" class="node">
+<title>cw_wr</title>
+<ellipse fill="#ffecb3" stroke="#f57f17" cx="1379" cy="-344.45" rx="140.33" ry="18"/>
+<text text-anchor="middle" x="1379" y="-341.45" font-family="Helvetica,sans-Serif" font-size="10.00">aws_cloudwatch_event_rule.webpage_sync_rule</text>
+</g>
+<!-- cwt_wr -->
+<g id="node16" class="node">
+<title>cwt_wr</title>
+<ellipse fill="#ffecb3" stroke="#f57f17" cx="1379" cy="-245.03" rx="151.03" ry="18"/>
+<text text-anchor="middle" x="1379" y="-242.03" font-family="Helvetica,sans-Serif" font-size="10.00">aws_cloudwatch_event_target.webpage_sync_target</text>
+</g>
+<!-- cw_wr&#45;&gt;cwt_wr -->
+<g id="edge9" class="edge">
+<title>cw_wr-&gt;cwt_wr</title>
+<path fill="none" stroke="#f57f17" stroke-width="1.3" d="M1379,-326.04C1379,-311.91 1379,-291.68 1379,-275.1"/>
+<polygon fill="#f57f17" stroke="#f57f17" stroke-width="1.3" points="1382.5,-275.26 1379,-265.26 1375.5,-275.26 1382.5,-275.26"/>
+</g>
+<!-- cwt_wr&#45;&gt;l_web -->
+<g id="edge10" class="edge">
+<title>cwt_wr-&gt;l_web</title>
+<path fill="none" stroke="#f57f17" stroke-width="1.3" d="M1411.04,-227.14C1444.52,-209.5 1497.5,-181.59 1536.59,-160.99"/>
+<polygon fill="#f57f17" stroke="#f57f17" stroke-width="1.3" points="1537.75,-164.33 1544.97,-156.57 1534.49,-158.14 1537.75,-164.33"/>
+</g>
+<!-- file_log -->
+<g id="node17" class="node">
+<title>file_log</title>
+<polygon fill="#fff3e0" stroke="#f57f17" points="1858,-461.88 1810,-461.88 1810,-425.88 1864,-425.88 1864,-455.88 1858,-461.88"/>
+<polyline fill="none" stroke="#f57f17" points="1858,-461.88 1858,-455.88"/>
+<polyline fill="none" stroke="#f57f17" points="1864,-455.88 1858,-455.88"/>
+<text text-anchor="middle" x="1837" y="-440.88" font-family="Helvetica,sans-Serif" font-size="10.00">log.py</text>
+</g>
+<!-- file_log&#45;&gt;l_log -->
+<g id="edge11" class="edge">
+<title>file_log-&gt;l_log</title>
+<path fill="none" stroke="#f57f17" stroke-dasharray="5,2" d="M1817.16,-425.46C1801.11,-411.38 1778.18,-391.25 1759.33,-374.71"/>
+<polygon fill="#f57f17" stroke="#f57f17" points="1761.68,-372.12 1751.86,-368.15 1757.07,-377.38 1761.68,-372.12"/>
+<text text-anchor="middle" x="1797.9" y="-393.78" font-family="Helvetica,sans-Serif" font-size="9.00">code</text>
+</g>
+<!-- file_web -->
+<g id="node18" class="node">
+<title>file_web</title>
+<polygon fill="#fff3e0" stroke="#f57f17" points="1615.97,-263.03 1552.03,-263.03 1552.03,-227.03 1621.97,-227.03 1621.97,-257.03 1615.97,-263.03"/>
+<polyline fill="none" stroke="#f57f17" points="1615.97,-263.03 1615.97,-257.03"/>
+<polyline fill="none" stroke="#f57f17" points="1621.97,-257.03 1615.97,-257.03"/>
+<text text-anchor="middle" x="1587" y="-242.03" font-family="Helvetica,sans-Serif" font-size="10.00">webpage.py</text>
+</g>
+<!-- file_web&#45;&gt;l_web -->
+<g id="edge12" class="edge">
+<title>file_web-&gt;l_web</title>
+<path fill="none" stroke="#f57f17" stroke-dasharray="5,2" d="M1587,-226.9C1587,-211.15 1587,-187.34 1587,-167.83"/>
+<polygon fill="#f57f17" stroke="#f57f17" points="1590.5,-167.86 1587,-157.86 1583.5,-167.86 1590.5,-167.86"/>
+<text text-anchor="middle" x="1596.76" y="-194.93" font-family="Helvetica,sans-Serif" font-size="9.00">code</text>
+</g>
+<!-- snap_rule -->
+<g id="node19" class="node">
+<title>snap_rule</title>
+<ellipse fill="#e1bee7" stroke="#6a1b9a" cx="462" cy="-528.88" rx="152.03" ry="18"/>
+<text text-anchor="middle" x="462" y="-525.88" font-family="Helvetica,sans-Serif" font-size="10.00">aws_cloudwatch_event_rule.snapshot_schedule_rule</text>
+</g>
+<!-- snap_target -->
+<g id="node20" class="node">
+<title>snap_target</title>
+<ellipse fill="#e1bee7" stroke="#6a1b9a" cx="480" cy="-443.88" rx="135.32" ry="18"/>
+<text text-anchor="middle" x="480" y="-440.88" font-family="Helvetica,sans-Serif" font-size="10.00">aws_cloudwatch_event_target.snapshot_target</text>
+</g>
+<!-- snap_rule&#45;&gt;snap_target -->
+<g id="edge13" class="edge">
+<title>snap_rule-&gt;snap_target</title>
+<path fill="none" stroke="#8e24aa" stroke-width="1.4" d="M465.73,-510.68C468.03,-500.07 471.04,-486.19 473.71,-473.91"/>
+<polygon fill="#8e24aa" stroke="#8e24aa" stroke-width="1.4" points="477.07,-474.93 475.76,-464.41 470.22,-473.45 477.07,-474.93"/>
+</g>
+<!-- lambda_snap -->
+<g id="node21" class="node">
+<title>lambda_snap</title>
+<ellipse fill="#e1bee7" stroke="#6a1b9a" cx="697" cy="-344.45" rx="162.66" ry="22.63"/>
+<text text-anchor="middle" x="697" y="-347.45" font-family="Helvetica,sans-Serif" font-size="10.00">aws_lambda_function.create_snapshot_function</text>
+<text text-anchor="middle" x="697" y="-335.45" font-family="Helvetica,sans-Serif" font-size="10.00">(handler: lambda_function.lambda_handler)</text>
+</g>
+<!-- snap_target&#45;&gt;lambda_snap -->
+<g id="edge14" class="edge">
+<title>snap_target-&gt;lambda_snap</title>
+<path fill="none" stroke="#8e24aa" stroke-width="1.4" d="M517.3,-426.13C550.87,-411.07 600.7,-388.69 639.38,-371.32"/>
+<polygon fill="#8e24aa" stroke="#8e24aa" stroke-width="1.4" points="640.35,-374.73 648.04,-367.44 637.48,-368.34 640.35,-374.73"/>
+</g>
+<!-- ebs_vol -->
+<g id="node25" class="node">
+<title>ebs_vol</title>
+<ellipse fill="#e1bee7" stroke="#6a1b9a" cx="875" cy="-245.03" rx="104.89" ry="18"/>
+<text text-anchor="middle" x="875" y="-242.03" font-family="Helvetica,sans-Serif" font-size="10.00">aws_ebs_volume.snapshot_volume</text>
+</g>
+<!-- lambda_snap&#45;&gt;ebs_vol -->
+<g id="edge26" class="edge">
+<title>lambda_snap-&gt;ebs_vol</title>
+<path fill="none" stroke="#8e24aa" stroke-dasharray="1,5" d="M736.06,-322.07C765.27,-306.09 805.07,-284.3 834.6,-268.14"/>
+<polygon fill="#8e24aa" stroke="#8e24aa" points="836.15,-271.28 843.25,-263.41 832.79,-265.14 836.15,-271.28"/>
+<text text-anchor="middle" x="832.42" y="-289.73" font-family="Helvetica,sans-Serif" font-size="9.00">env: VOLUME_ID</text>
+</g>
+<!-- iam_role -->
+<g id="node22" class="node">
+<title>iam_role</title>
+<ellipse fill="#e1bee7" stroke="#6a1b9a" cx="1088" cy="-443.88" rx="81.49" ry="18"/>
+<text text-anchor="middle" x="1088" y="-440.88" font-family="Helvetica,sans-Serif" font-size="10.00">aws_iam_role.lambda_role</text>
+</g>
+<!-- iam_role&#45;&gt;l_log -->
+<g id="edge32" class="edge">
+<title>iam_role-&gt;l_log</title>
+<path fill="none" stroke="#6a1b9a" stroke-dasharray="5,2" d="M1153.58,-432.87C1262.68,-416.21 1482.61,-382.62 1615.84,-362.28"/>
+<polygon fill="#6a1b9a" stroke="#6a1b9a" points="1616.02,-365.79 1625.37,-360.82 1614.96,-358.87 1616.02,-365.79"/>
+<text text-anchor="middle" x="1433.63" y="-393.78" font-family="Helvetica,sans-Serif" font-size="9.00">role</text>
+</g>
+<!-- iam_role&#45;&gt;l_web -->
+<g id="edge33" class="edge">
+<title>iam_role-&gt;l_web</title>
+<path fill="none" stroke="#6a1b9a" stroke-dasharray="5,2" d="M1109.5,-426.24C1126.54,-412.08 1149.92,-390.39 1165,-367.08 1201.08,-311.34 1167.53,-271.32 1217,-227.03 1253.86,-194.03 1373.75,-168 1467.18,-152.05"/>
+<polygon fill="#6a1b9a" stroke="#6a1b9a" points="1467.66,-155.52 1476.94,-150.41 1466.5,-148.62 1467.66,-155.52"/>
+<text text-anchor="middle" x="1194.05" y="-289.73" font-family="Helvetica,sans-Serif" font-size="9.00">role</text>
+</g>
+<!-- iam_role&#45;&gt;lambda_snap -->
+<g id="edge17" class="edge">
+<title>iam_role-&gt;lambda_snap</title>
+<path fill="none" stroke="#8e24aa" stroke-width="1.2" d="M1035.27,-429.74C971.29,-413.8 862.47,-386.69 785.55,-367.52"/>
+<polygon fill="#8e24aa" stroke="#8e24aa" stroke-width="1.2" points="786.76,-364.21 776.21,-365.19 785.07,-371.01 786.76,-364.21"/>
+</g>
+<!-- iam_attach -->
+<g id="node23" class="node">
+<title>iam_attach</title>
+<ellipse fill="#e1bee7" stroke="#6a1b9a" cx="1051" cy="-528.88" rx="153.02" ry="18"/>
+<text text-anchor="middle" x="1051" y="-525.88" font-family="Helvetica,sans-Serif" font-size="10.00">aws_iam_role_policy_attachment.lambda_attachment</text>
+</g>
+<!-- iam_attach&#45;&gt;iam_role -->
+<g id="edge16" class="edge">
+<title>iam_attach-&gt;iam_role</title>
+<path fill="none" stroke="#8e24aa" stroke-width="1.2" d="M1058.67,-510.68C1063.58,-499.67 1070.06,-485.12 1075.69,-472.51"/>
+<polygon fill="#8e24aa" stroke="#8e24aa" stroke-width="1.2" points="1078.73,-474.28 1079.6,-463.72 1072.34,-471.43 1078.73,-474.28"/>
+</g>
+<!-- iam_policy -->
+<g id="node24" class="node">
+<title>iam_policy</title>
+<ellipse fill="#e1bee7" stroke="#6a1b9a" cx="1051" cy="-630.68" rx="92.18" ry="18"/>
+<text text-anchor="middle" x="1051" y="-627.68" font-family="Helvetica,sans-Serif" font-size="10.00">aws_iam_policy.lambda_policy</text>
+</g>
+<!-- iam_policy&#45;&gt;iam_attach -->
+<g id="edge15" class="edge">
+<title>iam_policy-&gt;iam_attach</title>
+<path fill="none" stroke="#8e24aa" stroke-width="1.2" d="M1051,-612.3C1051,-597.56 1051,-576.11 1051,-558.79"/>
+<polygon fill="#8e24aa" stroke="#8e24aa" stroke-width="1.2" points="1054.5,-558.88 1051,-548.88 1047.5,-558.88 1054.5,-558.88"/>
+</g>
+<!-- snap_att -->
+<g id="node26" class="node">
+<title>snap_att</title>
+<ellipse fill="#e1bee7" stroke="#6a1b9a" cx="977" cy="-133.43" rx="135.31" ry="18"/>
+<text text-anchor="middle" x="977" y="-130.43" font-family="Helvetica,sans-Serif" font-size="10.00">aws_volume_attachment.snapshot_attachment</text>
+</g>
+<!-- ebs_vol&#45;&gt;snap_att -->
+<g id="edge18" class="edge">
+<title>ebs_vol-&gt;snap_att</title>
+<path fill="none" stroke="black" d="M890.94,-226.9C907.61,-208.99 933.96,-180.67 953.12,-160.09"/>
+<polygon fill="black" stroke="black" points="955.56,-162.61 959.81,-152.9 950.43,-157.84 955.56,-162.61"/>
+</g>
+<!-- snap_att&#45;&gt;m_ec2 -->
+<g id="edge27" class="edge">
+<title>snap_att-&gt;m_ec2</title>
+<path fill="none" stroke="#8e24aa" stroke-width="1.2" d="M1070.45,-120.02C1114.29,-114.4 1167.28,-107.89 1215,-102.8 1458.25,-76.87 1745.82,-53.24 1888.83,-41.96"/>
+<polygon fill="#8e24aa" stroke="#8e24aa" stroke-width="1.2" points="1889.04,-45.46 1898.74,-41.18 1888.49,-38.48 1889.04,-45.46"/>
+<text text-anchor="middle" x="1500.13" y="-78.7" font-family="Helvetica,sans-Serif" font-size="9.00">attach</text>
+</g>
+<!-- sns_topic -->
+<g id="node27" class="node">
+<title>sns_topic</title>
+<ellipse fill="#e1bee7" stroke="#6a1b9a" cx="877" cy="-443.88" rx="94.19" ry="18"/>
+<text text-anchor="middle" x="877" y="-440.88" font-family="Helvetica,sans-Serif" font-size="10.00">aws_sns_topic.instance_events</text>
+</g>
+<!-- sns_sub -->
+<g id="node28" class="node">
+<title>sns_sub</title>
+<ellipse fill="#e1bee7" stroke="#6a1b9a" cx="1018" cy="-344.45" rx="135.97" ry="18"/>
+<text text-anchor="middle" x="1018" y="-341.45" font-family="Helvetica,sans-Serif" font-size="10.00">aws_sns_topic_subscription.email_subscription</text>
+</g>
+<!-- sns_topic&#45;&gt;sns_sub -->
+<g id="edge21" class="edge">
+<title>sns_topic-&gt;sns_sub</title>
+<path fill="none" stroke="#6a1b9a" stroke-width="1.3" d="M901.24,-426.13C923.9,-410.48 957.98,-386.93 983.48,-369.31"/>
+<polygon fill="#6a1b9a" stroke="#6a1b9a" stroke-width="1.3" points="985.27,-372.32 991.51,-363.76 981.3,-366.56 985.27,-372.32"/>
+</g>
+<!-- scale_tgt -->
+<g id="node30" class="node">
+<title>scale_tgt</title>
+<ellipse fill="#e1bee7" stroke="#6a1b9a" cx="756" cy="-528.88" rx="120.27" ry="18"/>
+<text text-anchor="middle" x="756" y="-525.88" font-family="Helvetica,sans-Serif" font-size="10.00">aws_cloudwatch_event_target.sns_target</text>
+</g>
+<!-- scale_tgt&#45;&gt;sns_topic -->
+<g id="edge20" class="edge">
+<title>scale_tgt-&gt;sns_topic</title>
+<path fill="none" stroke="#6a1b9a" stroke-width="1.3" d="M780.78,-510.89C798.68,-498.61 823.07,-481.87 842.82,-468.33"/>
+<polygon fill="#6a1b9a" stroke="#6a1b9a" stroke-width="1.3" points="844.78,-471.23 851.05,-462.69 840.82,-465.46 844.78,-471.23"/>
+</g>
+<!-- sebs_vol -->
+<g id="node31" class="node">
+<title>sebs_vol</title>
+<ellipse fill="none" stroke="#8e24aa" stroke-dasharray="1,5" cx="845" cy="-630.68" rx="57.41" ry="18"/>
+<text text-anchor="middle" x="845" y="-627.68" font-family="Helvetica,sans-Serif" font-size="10.00">env: VOLUME_ID</text>
+</g>
+<!-- cale_rule -->
+<g id="node32" class="node">
+<title>cale_rule</title>
+<ellipse fill="#e1bee7" stroke="#6a1b9a" cx="378" cy="-630.68" rx="34.02" ry="18"/>
+<text text-anchor="middle" x="378" y="-627.68" font-family="Helvetica,sans-Serif" font-size="10.00">cale_rule</text>
+</g>
+<!-- cale_rule&#45;&gt;scale_tgt -->
+<g id="edge19" class="edge">
+<title>cale_rule-&gt;scale_tgt</title>
+<path fill="none" stroke="#6a1b9a" stroke-width="1.3" d="M398.75,-615.97C406.13,-611.7 414.67,-607.4 423,-604.68 509.01,-576.65 537.2,-601.47 625,-579.68 653.47,-572.62 684.17,-561.17 708.69,-551.02"/>
+<polygon fill="#6a1b9a" stroke="#6a1b9a" stroke-width="1.3" points="709.82,-554.35 717.68,-547.24 707.1,-547.89 709.82,-554.35"/>
+</g>
+<!-- file_snap -->
+<g id="node33" class="node">
+<title>file_snap</title>
+<polygon fill="#f3e5f5" stroke="#8e24aa" points="742.36,-461.88 645.64,-461.88 645.64,-425.88 748.36,-425.88 748.36,-455.88 742.36,-461.88"/>
+<polyline fill="none" stroke="#8e24aa" points="742.36,-461.88 742.36,-455.88"/>
+<polyline fill="none" stroke="#8e24aa" points="748.36,-455.88 742.36,-455.88"/>
+<text text-anchor="middle" x="697" y="-440.88" font-family="Helvetica,sans-Serif" font-size="10.00">lambda_function.py</text>
+</g>
+<!-- file_snap&#45;&gt;lambda_snap -->
+<g id="edge22" class="edge">
+<title>file_snap-&gt;lambda_snap</title>
+<path fill="none" stroke="#8e24aa" stroke-dasharray="5,2" d="M697,-425.46C697,-412.55 697,-394.56 697,-378.9"/>
+<polygon fill="#8e24aa" stroke="#8e24aa" points="700.5,-379.02 697,-369.02 693.5,-379.02 700.5,-379.02"/>
+<text text-anchor="middle" x="706.76" y="-393.78" font-family="Helvetica,sans-Serif" font-size="9.00">code</text>
+</g>
+<!-- r_sg -->
+<g id="node34" class="node">
+<title>r_sg</title>
+<ellipse fill="#c8e6c9" stroke="#1b5e20" cx="1632" cy="-922.08" rx="99.21" ry="18"/>
+<text text-anchor="middle" x="1632" y="-919.08" font-family="Helvetica,sans-Serif" font-size="10.00">aws_security_group.database_sg</text>
+</g>
+<!-- r_db -->
+<g id="node36" class="node">
+<title>r_db</title>
+<ellipse fill="#c8e6c9" stroke="#1b5e20" cx="1732" cy="-827.28" rx="154.54" ry="18"/>
+<text text-anchor="middle" x="1732" y="-824.28" font-family="Helvetica,sans-Serif" font-size="10.00">aws_db_instance.database (db_name=projet_devops)</text>
+</g>
+<!-- r_sg&#45;&gt;r_db -->
+<g id="edge23" class="edge">
+<title>r_sg-&gt;r_db</title>
+<path fill="none" stroke="#2e7d32" stroke-width="1.3" d="M1650.34,-904.06C1665.61,-889.89 1687.57,-869.51 1704.87,-853.46"/>
+<polygon fill="#2e7d32" stroke="#2e7d32" stroke-width="1.3" points="1707.04,-856.22 1711.99,-846.85 1702.28,-851.08 1707.04,-856.22"/>
+</g>
+<!-- r_sub -->
+<g id="node35" class="node">
+<title>r_sub</title>
+<ellipse fill="#c8e6c9" stroke="#1b5e20" cx="1862" cy="-922.08" rx="108.92" ry="18"/>
+<text text-anchor="middle" x="1862" y="-919.08" font-family="Helvetica,sans-Serif" font-size="10.00">aws_db_subnet_group.subnet_group</text>
+</g>
+<!-- r_sub&#45;&gt;m_sg -->
+<g id="edge35" class="edge">
+<title>r_sub-&gt;m_sg</title>
+<path fill="none" stroke="#4caf50" stroke-dasharray="1,5" d="M1890.33,-904.31C1913.69,-888.11 1943,-861.22 1943,-828.28 1943,-828.28 1943,-828.28 1943,-244.03 1943,-214.26 1956.68,-182.77 1968.42,-161.22"/>
+<polygon fill="#4caf50" stroke="#4caf50" points="1971.31,-163.23 1973.22,-152.81 1965.22,-159.77 1971.31,-163.23"/>
+<text text-anchor="middle" x="1960.26" y="-526.18" font-family="Helvetica,sans-Serif" font-size="9.00">VPC link</text>
+</g>
+<!-- r_sub&#45;&gt;a_lb -->
+<g id="edge25" class="edge">
+<title>r_sub-&gt;a_lb</title>
+<path fill="none" stroke="#4caf50" stroke-dasharray="5,2" d="M1785,-908.96C1770.73,-907.06 1755.94,-905.32 1742,-904.08 1386.5,-872.48 485,-924.51 137,-845.28 134.69,-844.76 132.35,-844.1 130.02,-843.34"/>
+<polygon fill="#4caf50" stroke="#4caf50" points="131.38,-840.12 120.79,-839.84 128.9,-846.66 131.38,-840.12"/>
+<text text-anchor="middle" x="432.19" y="-871.98" font-family="Helvetica,sans-Serif" font-size="9.00">VPC / subnets</text>
+</g>
+<!-- r_sub&#45;&gt;r_db -->
+<g id="edge24" class="edge">
+<title>r_sub-&gt;r_db</title>
+<path fill="none" stroke="#2e7d32" stroke-width="1.3" d="M1838.16,-904.06C1817.85,-889.57 1788.44,-868.57 1765.73,-852.36"/>
+<polygon fill="#2e7d32" stroke="#2e7d32" stroke-width="1.3" points="1767.91,-849.61 1757.73,-846.65 1763.84,-855.31 1767.91,-849.61"/>
+</g>
+</g>
+</svg>
